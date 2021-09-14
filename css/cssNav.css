@@ -1,0 +1,97 @@
+
+
+/* ////////////////////////// Barre de Navigation ///////////////////// */
+.menu{
+    position: relative;
+}
+.ani-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    transform: translateY(-3em);
+    z-index: -1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s; 
+}
+.menu:focus .ani-menu,
+.menu:focus-within .ani-menu,
+.menu:hover .ani-menu{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s,0s, 0.3s;
+}
+nav a{
+    color: #fff;
+    display: block;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-family: big john;
+}
+.ani-menu a{
+    width: 70%;
+    padding: 15px 30px;
+    font-family: roboto;
+}
+.ani-menu a:hover {
+    background:gray;
+}
+nav a:hover
+{
+    background-color: crimson;
+    
+}
+nav ul, nav ul li{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+nav > ul{
+    background: #262626;
+    text-align: center;
+}
+nav > ul > li {
+    display: inline-block;
+    border-left: 1px solid #fff;
+}
+nav > ul > li:first-child{
+    border-left: none;
+}
+.ani-menu{
+    background:crimson;
+}
+
+/*////////////////////////// Cartes /////////////////////   */
+.card, .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+.card2:hover{
+    background-color:rgba(153,153,153, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+canvas{
+    margin: 5px;
+}
+canvas:hover{
+    position: 10px ;
+    transform: scale(1.2);
+}
+
+.aff{
+    width: 10em;
+    height: 10em;
+    overflow: auto;
+}
+

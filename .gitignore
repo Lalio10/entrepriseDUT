@@ -1,0 +1,12 @@
+# directory
+.idea/**
+
+# file
+*.cfg
+*.tmp
+
+# pics
+*.jpg
+*.jpeg
+*.png
+*.gif

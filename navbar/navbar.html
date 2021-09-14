@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    overflow-X: hidden;
+    overflow-Y: scroll;
+  }
+
+  .menu {
+    position: relative;
+    width: 90%;
+    z-index: 9999;
+  }
+
+  .my-navbar {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-item .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    position: relative;
+    color: black;
+  }
+
+  .nav-item .nav-link:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: brown;
+    transition: 0.5s;
+  }
+
+
+  .nav-item .nav-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  .navbar-brand {
+    text-transform: capitalize;
+    font-size: 35px;
+    color: #2f3542;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 20px;
+    transition: 0.5s;
+    animation: scroll 0.6s 1;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+</style>
+
+
+<body>
+
+  <div class="container-fluid menu">
+    <nav class="navbar navbar-expand-lg my-navbar">
+      <a class="navbar-brand" href="#">Creative logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, et aliquid sunt, pariatur praesentium consequuntur doloribus odit vitae, laborum consectetur beatae eos ipsa repellat cum omnis voluptas doloremque repudiandae velit?x10
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum!
+
+  elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum!
+  elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum!
+  elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum!
+  elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum! elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum! elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum! elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum! elit. Autem, inventore officia. Rem, enim. Debitis obcaecati facilis nesciunt, voluptatibus aliquam omnis dolores earum recusandae illo animi voluptates totam nobis perferendis corporis!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, odit voluptatibus quo sapiente unde tenetur quam, nulla praesentium, minus veritatis sequi odio aliquam eos dolorem natus non nesciunt. Eveniet, nulla?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem velit sunt officiis eius soluta officia ab consequuntur, vero, recusandae rem odit qui repellat, et aliquam maxime tempore laboriosam repellendus!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore necessitatibus provident recusandae rerum et. Nulla doloremque porro quibusdam facilis adipisci cum, aliquid fugiat rerum explicabo nostrum ut id modi
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus id sint perspiciatis quisquam quis excepturi autem nobis rem, ipsum ullam officiis est nemo voluptate at eaque ab laboriosam iste rerum!</p>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 60) {
+          $('.my-navbar').addClass('navbar-scroll');
+        } else {
+          $('.my-navbar').removeClass('navbar-scroll');
+        }
+      });
+    });
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
